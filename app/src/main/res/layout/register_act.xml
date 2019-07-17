@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+
+    <TextView android:layout_width="203dp"
+              android:layout_height="wrap_content"
+              android:text="REGISTRATION"
+              android:textSize="25sp"
+              android:paddingLeft="10dp"
+              android:paddingBottom="30dp"
+              android:textStyle="bold"/>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textEmailAddress"
+              android:layout_margin="20dp"
+              android:hint="UserName"
+              android:padding="10dp"
+              android:background="@drawable/sahpe_emailpass"
+              android:id="@+id/et_usename"/>
+
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textEmailAddress"
+              android:layout_margin="20dp"
+              android:hint="masukan email"
+              android:padding="10dp"
+              android:background="@drawable/sahpe_emailpass"
+              android:id="@+id/et_email"/>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textPassword"
+              android:layout_margin="20dp"
+              android:layout_marginBottom="25dp"
+              android:padding="10dp"
+              android:background="@drawable/sahpe_emailpass"
+              android:hint="Input Password"
+              android:id="@+id/et_password"/>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textPassword"
+              android:layout_margin="20dp"
+              android:layout_marginBottom="25dp"
+              android:hint="Re Input Password"
+              android:padding="10dp"
+              android:background="@drawable/sahpe_emailpass"
+              android:id="@+id/et_re_password"/>`
+
+    <Button android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/putih"
+            android:background="@drawable/sahpe_reg"
+            android:id="@+id/btn_regist"/>
+
+</LinearLayout>
