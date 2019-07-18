@@ -1,6 +1,7 @@
 package com.example.androidlatihan15_firebaseauth_husin
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -10,13 +11,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.navbotton_act.*
 import android.view.Menu
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fr_person.*
 
 
 class NavBottom_Act : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.navbotton_act)
+
+
+
 
         setSupportActionBar(toolbar)
 
@@ -51,10 +58,9 @@ class NavBottom_Act : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when(item!!.itemId) {
-            R.id.action_logout -> {
-                val fAuth = FirebaseAuth.getInstance()
-                fAuth.signOut()
-                finish()
+            R.id.action_profile -> {
+              startActivity(Intent(this,Profile::class.java))
+
             }
         }
         return super.onOptionsItemSelected(item)

@@ -12,12 +12,17 @@ import kotlinx.android.synthetic.main.fr_person.*
 import java.util.zip.Inflater
 
 class PersonFragment : Fragment() {
-//    lateinit var fAuth: FirebaseAuth
+   // lateinit var fAuth: FirebaseAuth
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fr_person, container, false)
 
+     //   fAuth = FirebaseAuth.getInstance()
+
+//        btn_logout_profile.setOnClickListener {
+        //    fAuth.signOut()
+        }
+
 
     }
 
-}
